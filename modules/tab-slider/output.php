@@ -74,7 +74,7 @@ function gmp_get_slideshow( $args = array() ){
 								<div class="text">
 									<h2><a href="'. get_permalink() .'" title="'. get_the_title() .'">'. get_the_title() .'</a></h2>
 									'. sprintf( '<p class="byline post-info">%s</p>', apply_filters( 'genesis_post_info', '[post_date] ' . __( 'By', 'gmp' ) . ' [post_author_posts_link] [post_comments] [post_edit]' ) ) .'
-									'. get_the_content_limit( 250, $args['more_link'] ) .'
+									'. get_the_content_limit( 200, $args['more_link'] ) .'
 								</div>
 							  </div><!-- end .tab_content -->';
 				
@@ -94,7 +94,7 @@ function gmp_get_slideshow( $args = array() ){
                             <div class="text">
                                 <h2><a href="'. get_permalink() .'" title="'. get_the_title() .'">'. get_the_title() .'</a></h2>
                                 '. sprintf( '<p class="byline post-info">%s</p>', apply_filters( 'genesis_post_info', '[post_date] ' . __( 'By', 'gmp' ) . ' [post_author_posts_link] [post_comments] [post_edit]' ) ) .'
-                                '. get_the_content_limit( 250, $args['more_link'] ) .'
+                                '. get_the_content_limit( 200, $args['more_link'] ) .'
                             </div>
                           </div><!-- end .tab_content -->';
             
