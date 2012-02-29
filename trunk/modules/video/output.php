@@ -269,7 +269,7 @@ function gmp_single_video_content( $content ){
     if( ! is_singular( 'video' ) )
         return $content;
     
-    return gmp_get_video() . $content;
+    return '<div class="gmp-video">'. gmp_get_video() . '</div>' . $content;
     
 }
 
