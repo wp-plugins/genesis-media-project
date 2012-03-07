@@ -59,7 +59,7 @@ function gmp_get_video( $height='', $width='', $inlineCSS=true, $imagesize='vide
         $video = '<div class="gmp-fit-video">'. gmp_format_video( $video ) .'</div>';
     }
     elseif( genesis_get_custom_field('_gmp_video_embed') ){
-        $video = '<div class="gmp-fit-video">'. gmp_format_video( htmlspecialchars_decode( genesis_get_custom_field('_gmp_video_embed') ) );
+        $video = '<div class="gmp-fit-video">'. gmp_format_video( htmlspecialchars_decode( genesis_get_custom_field('_gmp_video_embed') ) ) . '</div>';
     }
     elseif( genesis_get_custom_field('_gmp_video_file') ){
         $video = gmp_video_from_file( genesis_get_custom_field('_gmp_video_file'), $height, $width, $inlineCSS, $imagesize );
