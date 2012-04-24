@@ -227,6 +227,9 @@ class NTG_Module_Loader {
      * Loads all registered module files
      */
     function load_module(){
+		
+		if( $this->not_has_genesis() )
+			return;
         
         foreach( $this->_modules as $module ){
             
@@ -379,6 +382,25 @@ class NTG_Module_Loader {
     function option( $hook = null, $field = null ) {
         echo gsv_get_option( $hook, $field );
     }
+	
+	/**
+	 * Tests to see if genesis() and by proxy other associated Genesis functions
+	 * are available to prevent function not exist errors in specific cases
+	 * where Genesis or a Genesis child theme is active, but the theme is not
+	 * being loaded, such as when using Premise or a mobile theme plugin.
+	 * 
+	 * @since 0.9.0.2
+	 * 
+	 * @return boolean TRUE if genesis() NOT available, else FALSE 
+	 */
+	function not_has_genesis() {
+		
+		if( function_exists( 'genesis' ) )
+			return;
+		
+		return true;
+		
+	}
     
 }
 ?>

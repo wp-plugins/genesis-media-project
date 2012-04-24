@@ -3,7 +3,7 @@
 /*
   Plugin Name: Genesis Media Project
   Plugin URI: http://DesignsByNicktheGeek.com
-  Version: 0.9.0.1
+  Version: 0.9.0.2
   Author: Nick_theGeek
   Author URI: http://DesignsByNicktheGeek.com
   Description: Adds video integration to Genesis via a video custom post type. Additionally, adds the option of building slideshows from the videos and displaying them via a widget, shortcode, or template tag.

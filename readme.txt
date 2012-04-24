@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: genesis, genesiswp, studiopress, menu
 Requires at least: 3.3
 Tested up to: 3.3.1
-Stable tag: 0.9.0.1
+Stable tag: 0.9.0.2
 
 Genesis Media Project is the premier media plugin for Genesis. Currently the plugin adds video support to the Genesis Framework and includes a Video Tabber.
 
@@ -41,7 +41,12 @@ Feel free to submit questions to Nick the Geek for inclusion on this list.
 
 == Change Log ==
 
-0.9.0.1 (3-06-2012 : Current)
+0.9.0.2 (4-24-2012 : Current)
+
+* Fixed conflict with plugins that bypass the theme functions.
+* Minor class updates to prepare for next major update.
+
+0.9.0.1 (3-06-2012)
 
 * Fixed HTML tag mismatch when using embed field
 
